@@ -8,50 +8,47 @@
 
     <Button
         android:id="@+id/divide"
-        android:layout_width="69dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="270dp"
-        android:text="/"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="5dp"
         android:onClick="clickDivide"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="/"
+        app:layout_constraintLeft_toRightOf="@id/multiply"
+        app:layout_constraintTop_toBottomOf="@+id/integerInput2" />
 
     <Button
         android:id="@+id/multiply"
-        android:layout_width="69dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="270dp"
-        android:text="x"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="5dp"
         android:onClick="clickMultiply"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="x"
+        app:layout_constraintLeft_toRightOf="@id/subtract"
+        app:layout_constraintTop_toBottomOf="@+id/integerInput2" />
 
     <Button
         android:id="@+id/subtract"
-        android:layout_width="69dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="270dp"
-        android:text="-"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="5dp"
         android:onClick="clickSubtract"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="-"
+        app:layout_constraintLeft_toRightOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@+id/integerInput2" />
 
     <TextView
         android:id="@+id/textViewCalculator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="170dp"
+        android:layout_marginEnd="100dp"
         android:text="Calculator"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,12 +57,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="Enter the first integer"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Enter the first integer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCalculator" />
@@ -75,26 +72,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="Enter the second integer"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Enter the second integer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/integerInput1" />
 
     <Button
         android:id="@+id/add"
-        android:layout_width="69dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="270dp"
-        android:text="+"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
         android:onClick="clickAdd"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="+"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/integerInput2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

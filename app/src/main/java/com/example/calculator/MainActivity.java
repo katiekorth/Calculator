@@ -68,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
         else if (operand == "divide") {
             returnVal = int1 / int2;
         }
+        String returnStr = returnVal.toString();
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra("message", returnVal);
+        intent.putExtra("message", returnStr);
         startActivity(intent);
     }
 
